@@ -31,10 +31,40 @@
     position: fixed;
     top: 0;
     left: 0;
+    display: none;
 }
 
-.sidebar-top,
-.sidebar-bottom {
+/* .sidebar-lg {
+    width: 75px;
+    background-color: black;
+    height: calc(100vh - 100px);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar-lg-top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+}
+
+.sidebar-lg-bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 50%;
+}
+
+.sidebar-lg img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+} */
+
+.sidebar-top {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -55,7 +85,7 @@
     margin-bottom: 20px;
 }
 
-#profile {
+.profile {
     background-color: grey;
     width: 40px;
     height: 40px;
@@ -189,6 +219,50 @@ header button {
 
 /* MEDIA QUERY DA 768PX */
 
+@media screen and (min-width:350px) and (max-width:575px) {
+    .sidebar {
+        width: 75px;
+        background-color: black;
+        height: calc(100vh - 100px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+    }
+
+    .sidebar-top {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 50%;
+    }
+
+    .sidebar-bottom {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 50%;
+    }
+
+    .sidebar img {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .profile {
+        background-color: grey;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+    }
+
+    .sidebar-lg {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 576px) {
 
     .top-section {
@@ -196,8 +270,46 @@ header button {
         margin-left: 200px;
     }
 
-    .sidebar {
+    .sidebar-lg {
         width: 200px;
+        background-color: black;
+        height: calc(100vh - 100px);
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .sidebar-lg-top {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        margin: 0px 25px 0px 25px;
+    }
+
+    .sidebar-lg-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 50%;
+        margin: 0px 25px 0px 25px;
+    }
+
+    .sidebar-lg img {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .logo-spotify {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .logo-spotify img {
+        width: 100%;
+        transform: scale(1.5);
+        margin: 20px;
     }
 
     .main-content {
