@@ -8,7 +8,7 @@
 .top-section {
     height: calc(100vh - 100px);
     width: 100vw;
-    background-color: brown;
+    background-color: rgba(20, 22, 41, 0.986);
     display: flex;
     overflow-y: auto;
     margin-left: 75px;
@@ -17,6 +17,7 @@
 .bottom-section {
     background-color: rgb(53, 52, 52);
     height: 100px;
+    display: flex;
 }
 
 /* FINE PROPRIETà ALLE DUE MACRO SEZIONI */
@@ -185,7 +186,41 @@ a {
 /* FINE MAIN */
 
 
+/* INIZIO FOOTER */
 
+.left-col,
+.right-col {
+    width: 100px;
+    height: 100%;
+    background-color: orange;
+}
+
+.center-col {
+    width: calc(100% - 200px);
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.playbar-controls {
+    display: flex;
+    width: 100%;
+}
+
+.playbar-controls .current,
+.playbar-controls .end {
+    width: 10%;
+    border: 1px dashed black;
+}
+
+.playbar-controls .playbar {
+    width: 80%;
+    border: 3px dashed black;
+}
 
 
 
@@ -209,7 +244,7 @@ header {
     left: 75px;
     right: 0;
     width: calc(100vw - 75px);
-    background-color: rgb(13, 1, 54);
+    background-color: rgb(3, 1, 15);
     z-index: 1;
     text-align: right;
     padding: 20px 0px 20px 20px;
@@ -230,6 +265,12 @@ header button {
 /* MEDIA QUERY DA 768PX */
 
 @media screen and (min-width:350px) and (max-width:575px) {
+
+    .top-section {
+        width: calc(100vw - 75px);
+        margin-left: 75px;
+    }
+
     .sidebar {
         width: 75px;
         background-color: black;
@@ -341,13 +382,13 @@ header button {
         margin: 10px 0px 0px 10px;
     }
 
-    .col-20 {
+    .col-25 {
         height: 25%;
     }
 
-    .col-80 {
+    .col-75 {
         height: 75%;
-        margin-top: 40px;
+        margin-top: 65px;
     }
 
     .fa-plus {
@@ -377,7 +418,7 @@ header button {
 
     .download-user {
         position: relative;
-        bottom: 30px;
+        bottom: -30px;
     }
 
     hr {
@@ -392,6 +433,14 @@ header button {
         margin: 2px;
     }
 
+    .center-col {
+        width: 70%;
+    }
+
+    .left-col,
+    .right-col {
+        width: 15%;
+    }
 }
 
 @media screen and (min-width: 1200px) {
