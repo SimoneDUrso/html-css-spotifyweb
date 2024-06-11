@@ -14,27 +14,27 @@
 <body>
     <!-- SEZIONE SUPERIORE -->
     <div class="top-section">
-        <!-- SIDEBAR -->
+        <!-- SIDEBAR CHE SARA' NASCOSTA FINO AL RAGGIUNGIMENTO DI UN DETERMINATO BREAKPOINT-->
         <div class="sidebar-lg">
             <div class="sidebar-lg-top col-25">
                 <div class="logo-spotify">
                     <img src="./img/logo.svg" alt="">
                 </div>
                 <div>
-                    <div class="col-100"><img src="./img/home.svg" alt="">
+                    <div class="col-100 border-left-green"><img src="./img/home.svg" alt="">
                         <span class="white">Home</span>
                     </div>
                 </div>
 
                 <div>
-                    <div class="col-100">
+                    <div class="col-100 border-left-green">
                         <img src="./img/search.svg" alt="">
                         <span class="grey">Cerca</span>
                     </div>
                 </div>
 
                 <div>
-                    <div class="col-100">
+                    <div class="col-100 border-left-green">
                         <img src="./img/libreria.svg" alt="">
                         <span class="grey">La tua libreria</span>
                     </div>
@@ -51,48 +51,50 @@
                             <p class="grey inline-block">Crea playlist</p>
                         </div>
                     </a>
+                    <div class="scrollbar">
+                        <div class="mb-20">
+                            <a href="">
+                                <p class="grey">Nome Playlist</p>
+                            </a>
+                        </div>
 
-                    <div class="mb-20">
-                        <a href="">
-                            <p class="grey">Nome Playlist</p>
-                        </a>
+                        <div class="mb-20">
+                            <a href="">
+                                <p class="grey">Nome Playlist</p>
+                            </a>
+                        </div>
+
+                        <div class="mb-20">
+                            <a href="">
+                                <p class="grey">Nome Playlist</p>
+                            </a>
+                        </div>
+
+                        <div class="mb-20">
+                            <a href="">
+                                <p class="grey">Nome Playlist</p>
+                            </a>
+                        </div>
+
+                        <div class="mb-20">
+                            <a href="">
+                                <p class="grey">Nome Playlist</p>
+                            </a>
+                        </div>
+
+                        <div class="mb-20">
+                            <a href="">
+                                <p class="grey">Nome Playlist</p>
+                            </a>
+                        </div>
+
+                        <div class="mb-20">
+                            <a href="">
+                                <p class="grey">Nome Playlist</p>
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="mb-20">
-                        <a href="">
-                            <p class="grey">Nome Playlist</p>
-                        </a>
-                    </div>
-
-                    <div class="mb-20">
-                        <a href="">
-                            <p class="grey">Nome Playlist</p>
-                        </a>
-                    </div>
-
-                    <div class="mb-20">
-                        <a href="">
-                            <p class="grey">Nome Playlist</p>
-                        </a>
-                    </div>
-
-                    <div class="mb-20">
-                        <a href="">
-                            <p class="grey">Nome Playlist</p>
-                        </a>
-                    </div>
-
-                    <div class="mb-20">
-                        <a href="">
-                            <p class="grey">Nome Playlist</p>
-                        </a>
-                    </div>
-
-                    <div class="mb-20">
-                        <a href="">
-                            <p class="grey">Nome Playlist</p>
-                        </a>
-                    </div>
 
                 </div>
                 <div class="download-user">
@@ -114,7 +116,7 @@
             </div>
 
         </div>
-
+        <!-- SIDEBAR PICCOLA CHE VERRA' VISUALIZZATA A CIRCA 480PX -->
         <div class="sidebar">
             <div class="sidebar-top">
                 <img src="./img/logo-small.svg" alt="">
@@ -136,19 +138,42 @@
             <header>
                 <button>EFFETTUA L'UPGRADE</button>
             </header>
-
+            <!-- NAVBAR AD INIZIO MAIN -->
             <main>
                 <div class="navbar">
                     <ul>
-                        <li><a href="">IN EVIDENZA</a></li>
-                        <li><a href="">PODCAST</a></li>
-                        <li><a href="">CLASSIFICHE</a></li>
-                        <li><a href="">GENERI E MOOD</a></li>
-                        <li><a href="">NUOVE USCITE</a></li>
-                        <li><a href="">SCOPRI</a></li>
+                        <li>
+                            <a href="">IN EVIDENZA</a>
+                            <hr class="mt-10px hr-none">
+                        </li>
+                        <li>
+                            <a href="">PODCAST</a>
+                            <hr class="mt-10px hr-none">
+                        </li>
+
+                        <li>
+                            <a href="">CLASSIFICHE</a>
+                            <hr class="mt-10px hr-none">
+                        </li>
+
+                        <li>
+                            <a href="">GENERI E MOOD</a>
+                            <hr class="mt-10px hr-none">
+                        </li>
+
+                        <li>
+                            <a href="">NUOVE USCITE</a>
+                            <hr class="mt-10px hr-none">
+                        </li>
+
+                        <li>
+                            <a href="">SCOPRI</a>
+                            <hr class="mt-10px hr-none">
+                        </li>
+
                     </ul>
                 </div>
-
+                <!-- PRIMO BLOCCO CON IMMAGINI E RELATIVE DESCRIZIONI -->
                 <div class="recently-played margin">
                     <h2 class="white">RECENTRLY PLAYED</h2>
 
@@ -159,6 +184,7 @@
                                     <img src="./img/metal_lifting.jpg" alt="">
                                     <h3 class="white">Heavy metal</h3>
                                     <p class="grey">Subtitle</p>
+                                    <i class="fa-regular fa-circle-play play-metal" style="color: #ffffff;"></i>
                                 </div>
                             </div>
 
@@ -167,6 +193,7 @@
                                     <img src="./img/stranger.jpeg" alt="">
                                     <h3 class="white">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
                                     <p class="grey">Kyle Dixon & Michael Stein</p>
+                                    <i class="fa-regular fa-circle-play play-stranger" style="color: #ffffff;"></i>
                                 </div>
                             </div>
 
@@ -175,6 +202,7 @@
                                     <img src="./img/aquietplace.jpeg" alt="">
                                     <h3 class="white">A Quiet Place</h3>
                                     <p class="grey">Subtitle</p>
+                                    <i class="fa-regular fa-circle-play play-quiet" style="color: #ffffff;"></i>
                                 </div>
                             </div>
 
@@ -183,6 +211,7 @@
                                     <img src="./img/split.jpeg" alt="">
                                     <h3 class="white">Split</h3>
                                     <p class="grey">Subtitle</p>
+                                    <i class="fa-regular fa-circle-play play-split" style="color: #ffffff;"></i>
                                 </div>
                             </div>
 
@@ -191,6 +220,7 @@
                                     <img src="./img/cure.jpeg" alt="">
                                     <h3 class="white">A cure for wellness</h3>
                                     <p class="grey">Subtitle</p>
+                                    <i class="fa-regular fa-circle-play play-wellness" style="color: #ffffff;"></i>
                                 </div>
                             </div>
 
@@ -199,13 +229,14 @@
                                     <img src="./img/sinister.jpeg" alt="">
                                     <h3 class="white">Sinister</h3>
                                     <p class="grey">Subtitle</p>
+                                    <i class="fa-regular fa-circle-play play-sinister" style="color: #ffffff;"></i>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-
+                <!-- SECONDO BLOCCO CON IMMAGINI E RELATIVE DESCRIZIONI -->
                 <div class="john-doe">
                     <h2 class="white">Creato per John Doe</h2>
                     <p class="grey">Più ascoti, più accurati saranno i suggerimenti.</p>
@@ -216,18 +247,21 @@
                                 <div class="content">
                                     <img src="./img/radar.jpeg" alt="">
                                     <h3 class="white">Release Radar</h3>
+                                    <i class="fa-regular fa-circle-play play-radar" style="color: #ffffff;"></i>
                                 </div>
                             </div>
                             <div class="col-50">
                                 <div class="content">
                                     <img src="./img/mixdaily.jpeg" alt="">
                                     <h3 class="white">Daily Mix 1</h3>
+                                    <i class="fa-regular fa-circle-play play-daily" style="color: #ffffff;"></i>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- TERZO BLOCCO CON IMMAGINI E RELATIVE DESCRIZIONI -->
                 <div class="john-doe">
                     <h2 class="white">Artisti più popolari</h2>
                     <p class="grey">Più ascoti, più accurati saranno i suggerimenti.</p>
@@ -238,12 +272,14 @@
                                 <div class="content">
                                     <img src="./img/youg.jpeg" alt="" class="br-100">
                                     <h3 class="white">Lana del Rey</h3>
+                                    <i class="fa-regular fa-circle-play play-lana" style="color: #ffffff;"></i>
                                 </div>
                             </div>
                             <div class="col-50">
                                 <div class="content">
                                     <img src="./img/einaudi.jpeg" alt="" class="br-100">
                                     <h3 class="white">Ludovico Einaudi</h3>
+                                    <i class="fa-regular fa-circle-play play-einaudi" style="color: #ffffff;"></i>
                                 </div>
                             </div>
                         </div>
@@ -255,26 +291,72 @@
 
     <!-- SEZIONE INFERIORE -->
     <div class="bottom-section">
+        <!-- COLONNA DI SINISTRA -->
+        <div class="left-col">
+            <div class="img-footer">
+                <img src="./img/sinister.jpeg" alt="">
+            </div>
 
-        <div class="left-col"></div>
+            <div class="name-song">
+                <h3 class="white">Sinister</h3>
+                <p class="grey">Brano Nome</p>
+            </div>
+
+            <div class="prefer">
+                <i class="fa-regular fa-heart grey"></i>
+                <i class="fa-regular fa-folder grey"></i>
+            </div>
+
+
+            <!-- COLONNA CENTRALE -->
+        </div>
 
         <div class="center-col">
             <div class="buttons">
-                PULSANTI
+                <i class="fa-solid fa-shuffle" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-arrow-rotate-right" style="color: #ffffff;"></i>
             </div>
 
             <div class="playbar-controls">
 
-                <div class="current">0:25</div>
+                <div class="current ta-r white">0:25</div>
 
-                <div class="playbar"></div>
+                <div class="playbar">
+                    <div class="row-playbar">
+                        <div class="col-20-playbar">
+                            <i class="fa-solid fa-circle" style="color: #ffffff;"></i>
+                        </div>
 
-                <div class="end">4:35</div>
+                        <div class="col-80-playbar"></div>
+                    </div>
+                </div>
+
+                <div class="end white">4:35</div>
             </div>
         </div>
 
-        <div class="right-col"></div>
+        <!-- COLONNA DI DESTRA -->
+        <div class="right-col">
+            <div class="col-40">
+                <i class="fa-solid fa-list-ul" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-display" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-volume-high" style="color: #ffffff;"></i>
+            </div>
 
+
+            <div class="playbar-right col-60">
+                <div class="row-playbar-right">
+                    <div class="col-20-playbar-right">
+                        <i class="fa-solid fa-circle" style="color: #ffffff;"></i>
+                    </div>
+
+                    <div class="col-80-playbar"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
