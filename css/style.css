@@ -92,6 +92,10 @@
     border-radius: 30px;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
 /* FINE SIDEBAR */
 
 
@@ -171,6 +175,11 @@ a {
     margin-bottom: 20px;
 }
 
+/* MOST POPULAR ARTISTS */
+
+.br-100 {
+    border-radius: 100%;
+}
 
 
 /* FINE MAIN */
@@ -212,6 +221,7 @@ header button {
     border: 1px solid white;
     background-color: rgba(0, 0, 0, 0);
     color: white;
+    margin-right: 5px;
 }
 
 /* FINE HEADER */
@@ -261,17 +271,18 @@ header button {
     .sidebar-lg {
         display: none;
     }
+
 }
 
 @media screen and (min-width: 576px) {
 
     .top-section {
-        width: calc(100vw - 200px);
-        margin-left: 200px;
+        width: calc(100vw - 250px);
+        margin-left: 250px;
     }
 
     .sidebar-lg {
-        width: 200px;
+        width: 250px;
         background-color: black;
         height: calc(100vh - 100px);
         position: fixed;
@@ -282,15 +293,12 @@ header button {
     .sidebar-lg-top {
         display: flex;
         flex-direction: column;
-        height: 50%;
         margin: 0px 25px 0px 25px;
     }
 
     .sidebar-lg-bottom {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        height: 50%;
         margin: 0px 25px 0px 25px;
     }
 
@@ -304,34 +312,15 @@ header button {
         width: 100%;
         display: flex;
         justify-content: flex-start;
+        margin-bottom: 30px;
     }
 
     .logo-spotify img {
         width: 100%;
         transform: scale(1.5);
         margin: 20px;
-    }
-
-    .main-content {
-        width: calc(100vw - 200px);
-    }
-
-    header {
-        left: 200px;
-        width: calc(100vw - 200px);
-    }
-
-}
-
-@media screen and (min-width: 768px) {
-
-    .top-section {
-        width: calc(100vw - 250px);
-        margin-left: 250px;
-    }
-
-    .sidebar {
-        width: 250px;
+        position: relative;
+        left: -25px;
     }
 
     .main-content {
@@ -343,4 +332,70 @@ header button {
         width: calc(100vw - 250px);
     }
 
+    .col-100 {
+        width: 100%;
+        display: flex;
+    }
+
+    .col-100 span {
+        margin: 10px 0px 0px 10px;
+    }
+
+    .col-20 {
+        height: 25%;
+    }
+
+    .col-80 {
+        height: 75%;
+        margin-top: 40px;
+    }
+
+    .fa-plus {
+        background-color: grey;
+        padding: 10px;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .sidebar-lg-bottom p {
+        font-size: 20px;
+    }
+
+    .new-playlist {
+        margin-bottom: 10px;
+    }
+
+    .mb-20 {
+        margin-bottom: 15px;
+    }
+
+    .sidebar-lg-bottom.col-80 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .download-user {
+        position: relative;
+        bottom: 30px;
+    }
+
+    hr {
+        margin: 0px 0px 20px 0px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .col-50 {
+        width: calc(25% - 4px);
+        margin: 2px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .col-50 {
+        width: calc(100% / 6 - 4px);
+    }
 }
